@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import HowItWorks from './components/HowItWorks/HowItWorks'
 import Properties from './components/Properties/Properties'
 import Agents from './components/Agents/Agents'
+import TheBest from './components/TheBest/TheBest'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <HowItWorks />
       <Properties />
       <Agents />
+      <TheBest />
     </div>
   )
 }
