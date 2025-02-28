@@ -47,7 +47,10 @@ const Properties = () => {
       >
         {slides.map((slideContent, index) => (
           <SwiperSlide key={slideContent} virtualIndex={index}>
-            Home {index}
+            <p>Home {index}</p>
+            <img src="..." alt={index} />
+            <p>Description {index}</p>
+            <button>Button {index}</button>
           </SwiperSlide>
         ))}
       </Swiper>
