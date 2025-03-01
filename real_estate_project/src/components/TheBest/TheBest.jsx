@@ -13,18 +13,19 @@ const TheBest = () => {
           <div>
             <h2>We Are the Best Real Estate Company</h2>
             <p class="large-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              At STATED, we believe in turning your real estate dreams into
+              reality. Start your journey today! 🏡✨
             </p>
             <p>
-              Est qui eos quasi ratione nostrum excepturi id recusandae fugit
-              omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit
-              omnis iste velit maxime.
+              Welcome to STATED, where finding your dream home
+              becomes a seamless experience. Whether you're looking for a cozy
+              apartment, a luxurious villa, or a commercial space, we bring you
+              the best real estate options tailored to your needs.
             </p>
             <ul>
-              <li>Placeat maxime animi minus</li>
-              <li>Placeat maxime animi minus</li>
-              <li>Placeat maxime animi minus</li>
-              <li>Placeat maxime animi minus</li>
+              <li>Explore Premium Properties</li>
+              <li>Smart Search & Filters</li>
+              <li>Seamless Buying & Renting Experience</li>
               <li>Placeat maxime animi minus</li>
             </ul>
             <button class="rounded">Learn More</button>

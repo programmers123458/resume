@@ -53,9 +53,10 @@ const Header = () => {
           <div class="hero-text">
             <h1>Buy and sell real estate properties</h1>
             <p>
-              Lorem ipsum dolor sit amet consectectur adipisicing elit.
-              Laboriosam assumenda ea quo cupiditate facere deleniti fuga
-              officia.
+              Welcome to STATED, where finding your dream home becomes a
+              seamless experience. Whether you're looking for a cozy apartment,
+              a luxurious villa, or a commercial space, we bring you the best
+              real estate options tailored to your needs.
             </p>
           </div>
         </section>

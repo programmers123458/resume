@@ -8,8 +8,11 @@ const Agents = () => {
         <div class="container">
           <h2>Agents</h2>
           <p class="large-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            minima neque tempora reiciendis.
+            Meet our team of experienced and dedicated real estate agents who
+            are committed to helping you find the perfect property. Whether
+            you're buying, selling, or renting, our agents provide expert
+            guidance, market insights, and personalized support to make your
+            real estate journey smooth and successful.
           </p>
 
           <div class="flex">

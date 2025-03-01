@@ -11,10 +11,13 @@ const Services = () => {
             <div>
               <div class="fas fa-home"></div>
               <div class="services-card-right">
-                <h3>Search Property</h3>
+                <h3>Find Property</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis quis molestiae vitae eligendi at.
+                  Looking for your dream home or the perfect investment? Our
+                  Find a Property tool makes it easy to search for homes,
+                  apartments, commercial spaces, and more. With advanced filters
+                  and up-to-date listings, you can discover properties that
+                  match your preferences and budget effortlessly.
                 </p>
                 <a href="#">Learn More</a>
               </div>
@@ -25,8 +28,10 @@ const Services = () => {
               <div class="services-card-right">
                 <h3>Buy Property</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis quis molestiae vitae eligendi at.
+                  Find your perfect home or investment property with ease!
+                  Whether you're looking for a cozy apartment, a spacious family
+                  house, or a commercial space, our platform offers a wide
+                  selection of real estate options to suit your needs.
                 </p>
                 <a href="#">Learn More</a>
               </div>
@@ -37,8 +42,11 @@ const Services = () => {
               <div class="services-card-right">
                 <h3>Investing</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis quis molestiae vitae eligendi at.
+                  Unlock the potential of real estate investment and grow your
+                  wealth with high-value properties in prime locations. Whether
+                  you're a first-time investor or an experienced real estate
+                  buyer, we provide the resources, insights, and expert guidance
+                  to help you make smart and profitable decisions.
                 </p>
                 <a href="#">Learn More</a>
               </div>
