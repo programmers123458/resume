@@ -7,6 +7,7 @@ import Agents from './components/Agents/Agents'
 import TheBest from './components/TheBest/TheBest'
 import Services from './components/Services/Services'
 import Testimonials from './components/Testimonials/Testimonials'
+import Contact from './components/Contact/Contact'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <TheBest />
       <Services />
       <Testimonials />
+      <Contact />
     </div>
   )
 }
