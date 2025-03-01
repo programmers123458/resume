@@ -5,6 +5,7 @@ import HowItWorks from './components/HowItWorks/HowItWorks'
 import Properties from './components/Properties/Properties'
 import Agents from './components/Agents/Agents'
 import TheBest from './components/TheBest/TheBest'
+import Services from './components/Services/Services'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Properties />
       <Agents />
       <TheBest />
+      <Services />
     </div>
   )
 }
