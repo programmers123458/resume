@@ -46,7 +46,7 @@ const Services = () => {
                   wealth with high-value properties in prime locations. Whether
                   you're a first-time investor or an experienced real estate
                   buyer, we provide the resources, insights, and expert guidance
-                  to help you make smart and profitable decisions.
+                  to help you make smart and profitable decisions.x`x`x``
                 </p>
                 <a href="#">Learn More</a>
               </div>

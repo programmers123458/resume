@@ -67,9 +67,9 @@ const Footer = () => {
         </div>
 
         <small>
-          Copyright &copy; 2019 All rights reserved | This template is made with{" "}
+          Copyright &copy; 2025 All rights reserved | This template is made with{" "}
           <span class="fa fa-heart"></span> by{" "}
-          <a href="https://colorlib.com">Colorlib</a>
+          <a href="https://diyor-khasanov.netlify.app/">Diyor Khasanov</a>
         </small>
       </footer>
     </div>
