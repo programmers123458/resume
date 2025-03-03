@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
 import Gaming from "./pages/Gaming/Gaming";
+import Blog from "./pages/Blog/Blog"
+import Forums from './pages/Forums/Forums'
+import Contact from "./pages/Contact/Contact"
 // import
 import "./App.css";
 
@@ -31,17 +34,17 @@ function App() {
                 </li>
                 <li>
                   <a>
-                    <Link to="/">Blog</Link>
+                    <Link to="/blog">Blog</Link>
                   </a>
                 </li>
                 <li>
                   <a>
-                    <Link to="/">Forums</Link>
+                    <Link to="/forums">Forums</Link>
                   </a>
                 </li>
                 <li>
                   <a>
-                    <Link to="/">Contact</Link>
+                    <Link to="/contact">Contact</Link>
                   </a>
                 </li>
               </ul>
@@ -58,6 +61,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/gaming" element={<Gaming />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/forums" element={<Forums />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
