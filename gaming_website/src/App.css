@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "helvetica", "sans-serif";
+  margin: 0;
+}
+
+/* start: global style rules */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.5;
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+label,
+strong {
+  line-height: 2;
+  font-size: 0.85em;
+  font-weight: 300;
+}
+
+.flex {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.badge {
+  padding: 9px 20px;
+  color: #eee;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.badge.new {
+  background-color: #ff205f;
+}
+
+.badge.strategy {
+  background-color: #4eae60;
+}
+
+.badge.racing {
+  background-color: #694eae;
+}
+
+.badge.rpg,
+.badge.adventure {
+  background-color: #40abf5;
+}
+
+.badge.tournaments {
+  background-color: #fb6e10;
+}
+
+.badge.premium-tournament {
+  background-color: #ffb320;
+  color: #252525;
+}
+
+.shade {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* end: global style rules */
+
+/* start: header styles */
+header {
+  background-color: #131313;
+  padding: 30px 0;
+  position: relative;
+  border-bottom: 5px solid #ffb320;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: 1px solid #ffb320;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu .strip {
+  display: block;
+  height: 1px;
+  background-color: #ffb320;
+  margin: 4px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 18px;
+}
+
+nav ul li a {
+  color: #eee;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #ffb320;
+}
+
+#login-register-button {
+  background-color: #ffb320;
+  color: #fff;
+  border-radius: 20px;
+  padding: 12px 30px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+/* end: header styles */
+
+/* start: media queries */
+@media (max-width: 1200px) {
+  .flex {
+    max-width: 1000px;
+  }
+
+  .latest-news-item {
+    font-size: 0.8em;
+  }
+
+  #tournaments .box .tournaments-content {
+    margin-left: 15px;
+  }
+
+  #tournaments .box .tournaments-content h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.2em;
+  }
+}
+
+@media (max-width: 991px) {
+  .flex {
+    max-width: 720px;
+  }
+
+  nav ul li {
+    margin: 0 12px;
+    font-size: 0.85em;
+  }
+
+  #latest-news .flex h5 {
+    width: 15%;
+  }
+
+  #game-types-boxes .flex {
+    flex-wrap: wrap;
+  }
+
+  #game-types-boxes .box {
+    flex-basis: 50%;
+  }
+
+  #tournaments .box {
+    flex-basis: 42%;
+  }
+
+  #tournaments .box .tournaments-image {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  #tournaments .box .tournaments-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #recent-reviews {
+    background: none;
+  }
+
+  #recent-reviews .flex {
+    flex-wrap: wrap;
+  }
+
+  #recent-reviews .box {
+    flex-basis: 48%;
+    margin-bottom: 45px;
+  }
+
+  #posts-comments .flex {
+    flex-wrap: wrap;
+  }
+
+  #posts-comments .game-warrior {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  #posts-comments .posts-comments-box {
+    flex-basis: 43%;
+  }
+
+  #posts-comments .game-warrior img.footer-graphic {
+    display: none;
+  }
+
+  footer .flex {
+    flex-wrap: wrap-reverse;
+  }
+
+  footer small {
+    flex-basis: 100%;
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+
+  footer ul {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0;
+  }
+} /* end 991px */
+
+@media (max-width: 767px) {
+  h4 {
+    font-size: 1.2em;
+  }
+
+  .flex {
+    max-width: 540px;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 101%;
+    width: 100%;
+    background-color: #131313;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 15px 0 15px 20px;
+    border-bottom: 1px solid #ffb320;
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin-top: 2px;
+  }
+
+  #hero-image {
+    height: 650px;
+    background-size: cover;
+  }
+
+  .hero-marketing-text {
+    margin-top: -85px;
+  }
+
+  .hero-marketing-text h1 {
+    font-size: 2.5em;
+  }
+
+  #latest-news .flex h5 {
+    display: none;
+  }
+
+  #latest-news-container {
+    flex-basis: 100%;
+  }
+
+  #recent-games {
+    padding: 60px 0;
+  }
+
+  #game-types-boxes .box,
+  #recent-games .box {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  #recent-games .flex,
+  #tournaments .flex {
+    flex-wrap: wrap;
+  }
+
+  #tournaments .box {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  #tournaments .box .tournaments-image {
+    height: 400px;
+  }
+
+  #recent-reviews .box {
+    flex-basis: 100%;
+  }
+
+  #recent-reviews .box .recent-reviews-image {
+    height: 400px;
+  }
+
+  #posts-comments .posts-comments-box {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  footer ul li {
+    margin: 0 10px;
+  }
+
+  footer ul li a {
+    font-size: 0.75em;
+  }
+} /* end 767px */
+
+@media (max-width: 400px) {
+  .logo img {
+    width: 150px;
+    margin-top: 2px;
+  }
+
+  #login-register-button {
+    padding: 10px;
+    font-size: 0.65em;
+  }
+
+  #tournaments .box .tournaments-image {
+    height: 220px;
+  }
+}
+/* end: media queries */
