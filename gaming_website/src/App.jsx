@@ -1,21 +1,36 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from './pages/Home/Home'
-import Games from './pages/Games/Games'
-import Blog from './pages/Blog/Blog'
-import Forums from './pages/Forums/Forums'
-import Contact from './pages/Contact/Contact'
-import './App.css'
+import Home from "./pages/Home/Home";
+import Games from "./pages/Games/Games";
+import Blog from "./pages/Blog/Blog";
+import Forums from "./pages/Forums/Forums";
+import Contact from "./pages/Contact/Contact";
+import "./App.css";
 
 function App() {
   return (
     <Router>
       <nav style={styles.navbar}>
-        <Link to="/" style={styles.link}>Home</Link>
-        <Link to="/games" style={styles.link}>Games</Link>
-        <Link to="/blog" style={styles.link}>Blog</Link>
-        <Link to="/forums" style={styles.link}>Forums</Link>
-        <Link to="/contact" style={styles.link}>Contact</Link>
+        <ul style={styles.navbar}>
+          <Link to="/" style={styles.link}>
+            Home
+          </Link>
+          <Link to="/games" style={styles.link}>
+            Games
+          </Link>
+          <Link to="/blog" style={styles.link}>
+            Blog
+          </Link>
+          <Link to="/forums" style={styles.link}>
+            Forums
+          </Link>
+          <Link to="/contact" style={styles.link}>
+            Contact
+          </Link>
+        </ul>
+        <form style={styles.form}>
+          <button>Login</button>
+        </form>
       </nav>
 
       <Routes>
@@ -37,12 +52,22 @@ const styles = {
     background: "#333",
     color: "white",
     justifyContent: "center",
+    alignItems: "center",
+    "padding-top": "10px",
+    "padding-bottom": "10px",
   },
   link: {
     color: "white",
     textDecoration: "none",
-    fontSize: "18px",
+    fontSize: "20px",
   },
+  form: {
+    marginTop: "2px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+
 };
 
 export default App;
