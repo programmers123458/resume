@@ -12,24 +12,24 @@ function App() {
     <Router>
       <nav style={styles.navbar}>
         <ul style={styles.navbar}>
-          <Link to="/" style={styles.link}>
+          <Link to="/" style={styles.link} className="link">
             Home
           </Link>
-          <Link to="/games" style={styles.link}>
+          <Link to="/games" style={styles.link} className="link">
             Games
           </Link>
-          <Link to="/blog" style={styles.link}>
+          <Link to="/blog" style={styles.link} className="link">
             Blog
           </Link>
-          <Link to="/forums" style={styles.link}>
+          <Link to="/forums" style={styles.link} className="link">
             Forums
           </Link>
-          <Link to="/contact" style={styles.link}>
+          <Link to="/contact" style={styles.link} className="link">
             Contact
           </Link>
         </ul>
         <form style={styles.form}>
-          <button>Login</button>
+          <button className="header-btn">Login</button>
         </form>
       </nav>
 
@@ -49,7 +49,7 @@ const styles = {
     display: "flex",
     gap: "20px",
     padding: "10px",
-    background: "#333",
+    background: "rgb(81, 2, 81)",
     color: "white",
     justifyContent: "center",
     alignItems: "center",

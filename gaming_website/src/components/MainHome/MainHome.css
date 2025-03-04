@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 93vh;
+  background: url("https://img.freepik.com/free-photo/purple-abstract-cube-3d-background_1379-294.jpg?t=st=1741097678~exp=1741101278~hmac=76384b7adf30dd2b45baa3971cf6ea7ba1f1f30591b76ffd6a0f0694b1d8df41&w=1380")
+    center center ;
+}
+.container .text {
+  padding-left: 200px;
+  padding-top: 300px;
+  width: 50%;
+}
+.container .text .title {
+  color: #fff;
+  font-size: 60px;
+}
+.container .text .title .purple {
+  color: rgb(194, 8, 194);
+}
+.container .text .description {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+button{
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgb(194, 8, 194);
+  font-size: 18px;
+  cursor: pointer;
+}
+.header-btn{
+  margin-left: 500px;
+}
