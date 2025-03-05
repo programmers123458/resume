@@ -2,8 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/logo.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="STATED." />
+    <title>STATED.</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/classes.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -11,10 +33,731 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>STATED.</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header>
+      <nav class="container">
+        <div class="logo"><a href="#">STATED.</a></div>
+        <div class="nav-icon"><span></span><span></span><span></span></div>
+        <ul>
+          <i class="fa-solid fa-x"></i>
+          <a class="active-g" href="#home"><li>home</li></a>
+          <a href="#prop"><li>properties</li></a>
+          <a href="#agents"><li>agents</li></a>
+          <a href="#about"><li>about</li></a>
+          <a href="#news"><li>news</li></a>
+          <a href="#contact"><li>contact</li></a>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="home">
+      <div class="container">
+        <div class="text">
+          <h1>buy and sell real estate properties</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            assumenda ea quo cupiditate facere deleniti fuga officia.
+          </p>
+        </div>
+      </div>
+      <a href="#prop">
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </section>
+    <section class="prop" id="prop">
+      <div class="parent">
+        <h2 class="title">how it works</h2>
+        <div class="container">
+          <div class="grid-system">
+            <div class="col">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <h4>find property.</h4>
+              <p>lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <h4>buy property.</h4>
+              <p>lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-heart"></i>
+              <h4>make investment.</h4>
+              <p>lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prop-info">
+        <div class="container">
+          <div class="head">
+            <h2 class="title">properties</h2>
+            <div class="links">
+              <a class="btn pre" href="#" id="pre">previous</a>
+              <span>/</span>
+              <a class="btn next" href="#" id="next">next</a>
+            </div>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image">
+                  <img
+                    src="https://stated.vercel.app/ims/property_1.jpg"
+                    alt="propertey"
+                  />
+                </div>
+                <div class="text">
+                  <h5>$3,400,000</h5>
+                  <div>
+                    <p>6 beds</p>
+                    <span>|</span>
+                    <p>4 baths</p>
+                    <span>|</span>
+                    <p>4250 sqft.</p>
+                  </div>
+                  <p>480 12th, Unit 14, San Francisco, CA</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img
+                    src="https://stated.vercel.app/ims/property_2.jpg"
+                    alt="propertey"
+                  />
+                </div>
+                <div class="text">
+                  <h5>$3,400,000</h5>
+                  <div>
+                    <p>6 beds</p>
+                    <span>|</span>
+                    <p>4 baths</p>
+                    <span>|</span>
+                    <p>4250 sqft.</p>
+                  </div>
+                  <p>480 12th, Unit 14, San Francisco, CA</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img
+                    src="https://stated.vercel.app/ims/property_3.jpg"
+                    alt="propertey"
+                  />
+                </div>
+                <div class="text">
+                  <h5>$3,400,000</h5>
+                  <div>
+                    <p>6 beds</p>
+                    <span>|</span>
+                    <p>4 baths</p>
+                    <span>|</span>
+                    <p>4250 sqft.</p>
+                  </div>
+                  <p>480 12th, Unit 14, San Francisco, CA</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img
+                    src="https://stated.vercel.app/ims/property_4.jpg"
+                    alt="propertey"
+                  />
+                </div>
+                <div class="text">
+                  <h5>$3,400,000</h5>
+                  <div>
+                    <p>6 beds</p>
+                    <span>|</span>
+                    <p>4 baths</p>
+                    <span>|</span>
+                    <p>4250 sqft.</p>
+                  </div>
+                  <p>480 12th, Unit 14, San Francisco, CA</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img
+                    src="https://stated.vercel.app/ims/property_5.jpg"
+                    alt="propertey"
+                  />
+                </div>
+                <div class="text">
+                  <h5>$3,400,000</h5>
+                  <div>
+                    <p>6 beds</p>
+                    <span>|</span>
+                    <p>4 baths</p>
+                    <span>|</span>
+                    <p>4250 sqft.</p>
+                  </div>
+                  <p>480 12th, Unit 14, San Francisco, CA</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img
+                    src="https://stated.vercel.app/ims/property_6.jpg"
+                    alt="propertey"
+                  />
+                </div>
+                <div class="text">
+                  <h5>$3,400,000</h5>
+                  <div>
+                    <p>6 beds</p>
+                    <span>|</span>
+                    <p>4 baths</p>
+                    <span>|</span>
+                    <p>4250 sqft.</p>
+                  </div>
+                  <p>480 12th, Unit 14, San Francisco, CA</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <a href="#" class="button wide">view all property listings</a>
+        </div>
+      </div>
+    </section>
+    <section id="agents" class="agents">
+      <div class="container">
+        <div class="head">
+          <h2 class="left-title title">agents</h2>
+          <p class="des">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            minima neque tempora reiciendis.
+          </p>
+        </div>
+        <div class="agent grid-system">
+          <div class="card">
+            <div class="image">
+              <img
+                src="https://stated.vercel.app/ims/person_8.jpg"
+                alt="person"
+              />
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text">
+              <h5>kelya steward</h5>
+              <p>real estate agent</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img
+                src="https://stated.vercel.app/ims/person_4.jpg"
+                alt="person"
+              />
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text">
+              <h5>dave sempson</h5>
+              <p>real estate agent</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img
+                src="https://stated.vercel.app/ims/person_5.jpg"
+                alt="person"
+              />
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text">
+              <h5>ben thompson</h5>
+              <p>real estate agent</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img
+                src="https://stated.vercel.app/ims/person_6.jpg"
+                alt="person"
+              />
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text">
+              <h5>kaiara spencer</h5>
+              <p>real estate agent</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img
+                src="https://stated.vercel.app/ims/person_7.jpg"
+                alt="person"
+              />
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text">
+              <h5>john doe</h5>
+              <p>real estate agent</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img
+                src="https://stated.vercel.app/ims/person_8.jpg"
+                alt="person"
+              />
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text">
+              <h5>keyla steward</h5>
+              <p>real estate agent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="info">
+          <div class="row">
+            <div class="image">
+              <div class="swiper mySecSwiper image-swip">
+                <div class="swiper-wrapper image-wrappe">
+                  <div class="swiper-slide img-slide">
+                    <img
+                      src="https://stated.vercel.app/ims/property_1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide img-slide">
+                    <img
+                      src="https://stated.vercel.app/ims/property_2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide img-slide">
+                    <img
+                      src="https://stated.vercel.app/ims/property_3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide img-slide">
+                    <img
+                      src="https://stated.vercel.app/ims/property_4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide img-slide">
+                    <img
+                      src="https://stated.vercel.app/ims/property_5.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide img-slide">
+                    <img
+                      src="https://stated.vercel.app/ims/property_6.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- <img src="ims/property_4.jpg" alt=""> -->
+              <div class="buttons button">
+                <a href="#" class="prev" id="i-pre">prev</a>
+                <a href="#" class="next" id="i-next">next</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="head">
+              <h2 class="title left-title">
+                we are the best realEstate company
+              </h2>
+              <p class="des">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                minima neque tempora reiciendis.
+              </p>
+            </div>
+            <p>
+              Est qui eos quasi ratione nostrum excepturi id recusandae fugit
+              omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit
+              omnis iste velit maxime.
+            </p>
+            <ul>
+              <li>placeat maxime animi minus</li>
+              <li>dolore qui placeat maxime</li>
+              <li>consectetur adipisicing</li>
+              <li>lorem ipsum dolor</li>
+              <li>placeat molestias animi</li>
+            </ul>
+            <a href="#" class="button">learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="srv">
+        <h2 class="title">services</h2>
+        <div class="container">
+          <div class="grid-system">
+            <div class="col">
+              <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="text">
+                <h4>search property</h4>
+                <p>
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.
+                </p>
+                <a href="#">learn more</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+              </div>
+              <div class="text">
+                <h4>buy property</h4>
+                <p>
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.
+                </p>
+                <a href="#">learn more</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="icon"><i class="fa-solid fa-heart"></i></div>
+              <div class="text">
+                <h4>invest a home</h4>
+                <p>
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.
+                </p>
+                <a href="#">learn more</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="icon"><i class="fa-solid fa-city"></i></div>
+              <div class="text">
+                <h4>post properties</h4>
+                <p>
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.
+                </p>
+                <a href="#">learn more</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="icon"><i class="fa-solid fa-street-view"></i></div>
+              <div class="text">
+                <h4>property locator</h4>
+                <p>
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.
+                </p>
+                <a href="#">learn more</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="icon"><i class="fa-solid fa-mobile-button"></i></div>
+              <div class="text">
+                <h4>stated apps</h4>
+                <p>
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.
+                </p>
+                <a href="#">learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="say">
+        <h2 class="title">people says...</h2>
+        <div class="swiper myThirdSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="qout">
+                <q
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum natus maxime omnis ut excepturi quam totam dolorem
+                  voluptas ipsa voluptate ipsum quas corporis autem optio saepe,
+                  itaque tempore at eligendi.</q
+                >
+              </div>
+              <div class="prof">
+                <img
+                  src="https://stated.vercel.app/ims/person_4.jpg"
+                  alt="profile-pic"
+                /><span>robert spears</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="qout">
+                <q
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum natus maxime omnis ut excepturi quam totam dolorem
+                  voluptas ipsa voluptate ipsum quas corporis autem optio saepe,
+                  itaque tempore at eligendi.</q
+                >
+              </div>
+              <div class="prof">
+                <img
+                  src="https://stated.vercel.app/ims/person_5.jpg"
+                  alt="profile-pic"
+                /><span>bruce rogers</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="qout">
+                <q
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum natus maxime omnis ut excepturi quam totam dolorem
+                  voluptas ipsa voluptate ipsum quas corporis autem optio saepe,
+                  itaque tempore at eligendi.</q
+                >
+              </div>
+              <div class="prof">
+                <img
+                  src="https://stated.vercel.app/ims/person_6.jpg"
+                  alt="profile-pic"
+                /><span>john smith</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="qout">
+                <q
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum natus maxime omnis ut excepturi quam totam dolorem
+                  voluptas ipsa voluptate ipsum quas corporis autem optio saepe,
+                  itaque tempore at eligendi.</q
+                >
+              </div>
+              <div class="prof">
+                <img
+                  src="https://stated.vercel.app/ims/person_7.jpg"
+                  alt="profile-pic"
+                /><span>jack mory</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="qout">
+                <q
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum natus maxime omnis ut excepturi quam totam dolorem
+                  voluptas ipsa voluptate ipsum quas corporis autem optio saepe,
+                  itaque tempore at eligendi.</q
+                >
+              </div>
+              <div class="prof">
+                <img
+                  src="https://stated.vercel.app/ims/person_8.jpg"
+                  alt="profile-pic"
+                /><span>silvester stalin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <h2 class="title">news & events</h2>
+      <div class="container">
+        <div class="new">
+          <div class="card">
+            <div class="image">
+              <img src="https://stated.vercel.app/ims/property_2.jpg" alt="" />
+            </div>
+            <div class="text">
+              <a href="#">20+ real properties for realtors</a>
+              <div>
+                <p>ham brook</p>
+                <span>.</span>
+                <p>jan 18, 2019</p>
+                <span>.</span><a href="#">news</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="https://stated.vercel.app/ims/property_3.jpg" alt="" />
+            </div>
+            <div class="text">
+              <a href="#">20+ real properties for realtors</a>
+              <div>
+                <p>ham brook</p>
+                <span>.</span>
+                <p>jan 18, 2019</p>
+                <span>.</span><a href="#">news</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="https://stated.vercel.app/ims/property_4.jpg" alt="" />
+            </div>
+            <div class="text">
+              <a href="#">20+ real properties for realtors</a>
+              <div>
+                <p>ham brook</p>
+                <span>.</span>
+                <p>jan 18, 2019</p>
+                <span>.</span><a href="#">news</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="title">contact us</h2>
+      <div class="container">
+        <div class="col">
+          <form action="">
+            <h3>contact form</h3>
+            <div class="name">
+              <div>
+                <label for="f-name">First Name</label>
+                <input type="text" name="f-name" id="f-name" />
+              </div>
+              <div>
+                <label for="l-name">Last Name</label>
+                <input type="text" name="l-name" id="l-name" />
+              </div>
+            </div>
+            <label for="mail">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="sub">Subject</label>
+            <input type="text" name="subject" id="subject" />
+            <label for="msg">Message</label>
+            <textarea
+              name="msg"
+              id="message"
+              rows="10"
+              placeholder="Write your notes or questions here..."
+            ></textarea>
+            <input
+              class="button"
+              type="submit"
+              id="button-send"
+              value="Send Message"
+            />
+          </form>
+        </div>
+        <div class="col">
+          <div class="add">
+            <h3>address</h3>
+            <address>
+              203 Fake St. Mountain View, San Francisco, California, USA
+            </address>
+          </div>
+          <div class="ph">
+            <h3>phone</h3>
+            <a href="#" class="data">+1 232 3235 324</a>
+          </div>
+          <div class="em">
+            <h3>email address</h3>
+            <a class="data" href="#">youremail@domain.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container hr">
+        <div>
+          <h6>about stated</h6>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            provident velit fugit! Deserunt hic beatae impedit sint quae
+            inventore optio odio nulla, doloribus iusto ad, magnam,
+            necessitatibus numquam unde doloremque!
+          </p>
+        </div>
+        <div>
+          <div class="links">
+            <h6>quick links</h6>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">testimonials</a></li>
+              <li><a href="#contact">contact us</a></li>
+            </ul>
+          </div>
+          <div>
+            <form action="">
+              <h6>subscribe newsletter</h6>
+              <div>
+                <input id="send-email" type="submit" value="Send" />
+                <input
+                  type="email"
+                  id="e-send"
+                  name="email"
+                  placeholder="Enter Email"
+                />
+              </div>
+            </form>
+            <h6>follow us</h6>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="copy">
+          Copyright &copy;2025 All rights reserved | This template is made with
+          ❤ by
+          <a href="https://github.com/programmers123458" target="_blank"
+            >TechBridge</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("07Nn38ayRbgjjo0R2");
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,56 @@
+/* header */
+.w-nav {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  border: none;
+  filter: drop-shadow(5px 5px 10px rgba(102, 102, 102, 0.15));
+}
+
+.short-nav {
+  padding: 10px;
+}
+
+/* logo */
+
+.b-logo {
+  color: #000 !important;
+}
+
+/* navegation links */
+
+.b-links {
+  color: #000;
+}
+
+.b-links:hover {
+  color: var(--main-color);
+}
+
+/* active link */
+
+.active-g {
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  .active-g {
+    color: var(--main-color);
+  }
+}
+
+.active-b {
+  color: var(--main-color);
+}
+
+/* nav icon */
+
+.m-navIcon {
+  background-color: #000 !important;
+}
+
+/* appear and disapear navbar */
+
+.appear {
+  right: 0;
+}
