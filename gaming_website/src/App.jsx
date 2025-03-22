@@ -49,7 +49,6 @@ const styles = {
     display: "flex",
     gap: "20px",
     padding: "10px",
-    background: "rgb(81, 2, 81)",
     color: "white",
     justifyContent: "center",
     alignItems: "center",
