@@ -5,6 +5,7 @@ import Games from "./pages/Games/Games";
 import Blog from "./pages/Blog/Blog";
 import Forums from "./pages/Forums/Forums";
 import Contact from "./pages/Contact/Contact";
+import Login from "./pages/Login/Login";
 import "./App.css";
 
 function App() {
@@ -29,7 +30,11 @@ function App() {
           </Link>
         </ul>
         <form style={styles.form}>
-          <button className="header-btn">Login</button>
+          <button className="header-btn">
+            <Link to="/login" style={styles.link}>
+              Login
+            </Link>
+          </button>
         </form>
       </nav>
 
@@ -39,6 +44,7 @@ function App() {
         <Route path="/about" element={<Blog />} />
         <Route path="/support" element={<Forums />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
@@ -64,9 +70,8 @@ const styles = {
     marginTop: "2px",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
-
 };
 
 export default App;
