@@ -15,14 +15,14 @@ function App() {
           <Link to="/" style={styles.link} className="link">
             Home
           </Link>
-          <Link to="/games" style={styles.link} className="link">
-            Games
+          <Link to="/community" style={styles.link} className="link">
+            Community
           </Link>
-          <Link to="/blog" style={styles.link} className="link">
-            Blog
+          <Link to="/about" style={styles.link} className="link">
+            About
           </Link>
-          <Link to="/forums" style={styles.link} className="link">
-            Forums
+          <Link to="/support" style={styles.link} className="link">
+            Support
           </Link>
           <Link to="/contact" style={styles.link} className="link">
             Contact
@@ -35,9 +35,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/games" element={<Games />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/forums" element={<Forums />} />
+        <Route path="/community" element={<Games />} />
+        <Route path="/about" element={<Blog />} />
+        <Route path="/support" element={<Forums />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
