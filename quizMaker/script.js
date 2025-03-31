@@ -1,6 +1,6 @@
 /* Created and coded by Abhilash Narayan */
 /* Quiz source: w3schools.com */
-var quiz = {
+let quiz = {
   JS: [
     {
       id: 1,
@@ -212,14 +212,14 @@ var quiz = {
       question: "What is the correct way to write a JavaScript array?",
       options: [
         {
-          a: "var colors = (1:&quot;red&quot;, 2:&quot;green&quot;, 3:&quot;blue&quot;)",
-          b: "var colors = [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]",
-          c: "var colors = 1 = (&quot;red&quot;), 2 = (&quot;green&quot;), 3 = (&quot;blue&quot;)",
-          d: "var colors = &quot;red&quot;, &quot;green&quot;, &quot;blue&quot;",
+          a: "let colors = (1:&quot;red&quot;, 2:&quot;green&quot;, 3:&quot;blue&quot;)",
+          b: "let colors = [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]",
+          c: "let colors = 1 = (&quot;red&quot;), 2 = (&quot;green&quot;), 3 = (&quot;blue&quot;)",
+          d: "let colors = &quot;red&quot;, &quot;green&quot;, &quot;blue&quot;",
         },
       ],
       answer:
-        "var colors = [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]",
+        "let colors = [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]",
       score: 0,
       status: "",
     },
@@ -314,12 +314,12 @@ var quiz = {
       question: "How do you declare a JavaScript variable?",
       options: [
         {
-          a: "var carName;",
+          a: "let carName;",
           b: "variable carName;",
           c: "v carName;",
         },
       ],
-      answer: "var carName;",
+      answer: "let carName;",
       score: 0,
       status: "",
     },
@@ -367,11 +367,11 @@ var quiz = {
     },
   ],
 };
-var quizApp = function () {
+let quizApp = function () {
   this.score = 0;
   this.qno = 1;
   this.currentque = 0;
-  var totalque = quiz.JS.length;
+  let totalque = quiz.JS.length;
   this.displayQuiz = function (cque) {
     this.currentque = cque;
     if (this.currentque < totalque) {
@@ -381,7 +381,7 @@ var quizApp = function () {
       $("#qid").html(quiz.JS[this.currentque].id + ".");
       $("#question").html(quiz.JS[this.currentque].question);
       $("#question-options").html("");
-      for (var key in quiz.JS[this.currentque].options[0]) {
+      for (let key in quiz.JS[this.currentque].options[0]) {
         if (quiz.JS[this.currentque].options[0].hasOwnProperty(key)) {
           $("#question-options").append(
             "<div class='form-check option-block'>" +
@@ -402,7 +402,7 @@ var quizApp = function () {
     }
     if (this.currentque >= totalque) {
       $("#next").attr("disabled", true);
-      for (var i = 0; i < totalque; i++) {
+      for (let i = 0; i < totalque; i++) {
         this.score = this.score + quiz.JS[i].score;
       }
       return this.showResult(this.score);
@@ -417,8 +417,8 @@ var quizApp = function () {
         totalque +
         "</h1>"
     );
-    for (var j = 0; j < totalque; j++) {
-      var res;
+    for (let j = 0; j < totalque; j++) {
+      let res;
       if (quiz.JS[j].score == 0) {
         res =
           '<span class="wrong">' +
@@ -446,7 +446,7 @@ var quizApp = function () {
     }
   };
   this.checkAnswer = function (option) {
-    var answer = quiz.JS[this.currentque].answer;
+    let answer = quiz.JS[this.currentque].answer;
     option = option.replace(/</g, "&lt;"); //for <
     option = option.replace(/>/g, "&gt;"); //for >
     option = option.replace(/"/g, "&quot;");
@@ -464,15 +464,15 @@ var quizApp = function () {
     this.displayQuiz(this.currentque);
   };
 };
-var jsq = new quizApp();
-var selectedopt;
+let jsq = new quizApp();
+let selectedopt;
 $(document).ready(function () {
   jsq.displayQuiz(0);
   $("#question-options").on(
     "change",
     "input[type=radio][name=option]",
     function (e) {
-      //var radio = $(this).find('input:radio');
+      //let radio = $(this).find('input:radio');
       $(this).prop("checked", true);
       selectedopt = $(this).val();
     }
