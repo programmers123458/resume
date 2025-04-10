@@ -17,13 +17,13 @@ function App() {
             Home
           </Link>
           <Link to="/community" style={styles.link} className="link">
-            Community
+            Games
           </Link>
           <Link to="/about" style={styles.link} className="link">
-            About
+            Blog
           </Link>
           <Link to="/support" style={styles.link} className="link">
-            Support
+            Forums
           </Link>
           <Link to="/contact" style={styles.link} className="link">
             Contact
