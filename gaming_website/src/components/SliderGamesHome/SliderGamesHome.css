@@ -36,3 +36,13 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+img.img-slider{
+  width: 600px;
+  height: 300px;
+}
+.top{
+font-size: 52px;
+background: white;
+padding-left: 200px;
+}
