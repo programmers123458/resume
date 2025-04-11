@@ -1,0 +1,39 @@
+*::selection {
+  background: purple;
+  color: #fff;
+}
+.bg-fff {
+  width: 100%;
+  background: #fff;
+  padding-top: 50px;
+}
+.title-discover {
+  padding-left: 200px;
+  font-size: 52px;
+  color: rgb(161, 4, 161);
+  padding-bottom: 50px;
+}
+.container-discover .card-discover img {
+  width: 220px;
+  height: 300px;
+}
+.justify-around {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 200px;
+  padding-right: 100px;
+}
+.purple-discover {
+  font-size: 18px;
+  color: purple;
+  font-weight: 600;
+}
+.container-discover .card-discover:hover {
+  cursor: pointer;
+}
+.name-discover {
+  font-size: 24px;
+  font-weight: 700;
+}

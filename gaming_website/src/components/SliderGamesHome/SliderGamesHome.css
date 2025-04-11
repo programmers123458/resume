@@ -46,6 +46,8 @@ img.img-slider {
   background: white;
   padding-left: 200px;
   color: rgb(175, 3, 175);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .justify-between {
   display: flex;
