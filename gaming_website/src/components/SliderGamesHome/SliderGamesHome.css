@@ -37,12 +37,37 @@ body {
   object-fit: cover;
 }
 
-img.img-slider{
+img.img-slider {
   width: 600px;
   height: 300px;
 }
-.top{
-font-size: 52px;
-background: white;
-padding-left: 200px;
+.top {
+  font-size: 52px;
+  background: white;
+  padding-left: 200px;
+  color: rgb(175, 3, 175);
+}
+.justify-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 250px;
+  padding-left: 200px;
+}
+.text-slider {
+  width: 40%;
+  padding-right: 200px;
+  text-align: left;
+}
+.name-slider {
+  margin-top: 5px;
+}
+.des-slider {
+  margin-top: 5px;
+}
+.price-slider {
+  margin-top: 5px;
+}
+.btn-slider-game {
+  margin-top: 5px;
 }
